@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>San Francisco, Walnut Creek, Experience Design | User Interface Design</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <link href="css/rwcustom.css"        rel="stylesheet">
+  
+ 
+  </head>
+<body class="body-portfolio-skill">
+<div id="rwnav"></div>
+<!--Content-->
+<h5 class="px-4 ">Front End Development and Performance Engineering</h5>
+<p class="px-4">
+  Front-end development involves taking a new or existing comp and developing it into an actual web or mobile application or website through the use of HTML, CSS and JavaScript.  A lot can be accomplished with vanilla javascript, however, you can use a framework like Angular or a library like React to build out the user interface.  
+
+  Modern JavaScript libraries, tooling. including Node.js, make it possible to truly enjoy the JavaScript ecosystem and push the boundaries of whats possible within a browser.   
+</p>
+
+
+
+<!--Content-->
+<h5 class="px-4 ">Sample demo apps on Github:</h5>
+<div class="text-left">
+       <p class="px-4 "> 
+           <a href="https://ramonaworks.github.io/01_weather-api-react/" target="_blank"><img src="/images/skill/development/react-app-sample.png" class="img-fluid text-left" alt="React Weather App"></a> 
+           <a href="https://ramonaworks.github.io/02_ramonavr360/index.html" target="_blank"><img src="images/skill/development/facebook-360.png" width="300" height="300" alt="Facebook 360 Demo"/></a></p>  
+        
+      
+</div>
+
+
+<h5 class="px-4 ">Testimonials:</h5>
+<div class="text-center"> 
+       <p> <img src="/images/portfolio_cisco/TESTIMONIALS_001-NR.jpg" class="img-fluid" alt="Modern Website Development and Design "> </p> 
+</div>
+
+
+
+
+
+
+      
+ <!--Footer-->
+<div id="rwfooter"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+    <script>
+      $(function(){
+        $("#rwnav").load("nav.html");
+        $("#rwfooter").load("footer.html"); 
+      
+        $(document).ready(function(){
+        // Adds minus icon for collapse element which is open by default
+        $(".collapse.show").each(function(){
+        	$(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+        
+        // Toggles plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+    });
+      });
+      </script>
+  </body>
+</html>

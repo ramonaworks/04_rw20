@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>San Francisco, Walnut Creek, Experience Design | User Interface Design</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <link href="css/rwcustom.css"        rel="stylesheet">
+  
+ 
+  </head>
+<body class="body-portfolio-skill">
+<div id="rwnav"></div>
+<!--Content-->
+<h5 class="px-4 ">Portfolio: Client Work &#8212; Cisco</h5>
+<div class="bs-example">
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i>1. The problem that was solved</button>									
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                        <ul>
+                                <li>Simplified the software licensing experience for Customers and Partners.</li>
+                                <li>The solution delivered visibility into license usage and product association.</li>
+                                <li>Clarity in site navigation and content flow that created an intuitive experience for a client’s software entitlements.</li> 
+                        </ul>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>2. The deliverables</button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <ul>
+                        <li>Fully functional application, UI design and graphics, including "The Solution Guide" logo.</li>
+                        <li>Pre production wireframes, ux flows, and design mock ups to support Cisco’s top initiative – i.e.: Smart Licensing.</li>
+                        <li>Created a PhpBB Forum that allows for continuous improvement of product. Created forum specific sections for each area, so that issues can be easily converted to solutions and upcoming features.</li> 
+                    </ul>
+                   
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--Content-->
+<h5 class="px-4 ">Screenshots of sample pages:</h5>
+<div class="text-center">
+       <p> <img src="/images/portfolio_cisco/portfolio_cisco_02.jpg" class="img-fluid" alt="Responsive image"> </p> 
+       <p> <img src="/images/portfolio_cisco/portfolio_cisco_03.jpg" class="img-fluid" alt="Responsive image"> </p> 
+       <p> <img src="/images/portfolio_cisco/portfolio_cisco_04.jpg" class="img-fluid" alt="Responsive image"> </p> 
+       <p> <img src="/images/portfolio_cisco/portfolio_cisco_05.jpg" class="img-fluid" alt="Responsive image"> </p> 
+       <p> <img src="/images/portfolio_cisco/portfolio_cisco_01.jpg" class="img-fluid" alt="Responsive image"> </p> 
+</div>
+
+
+<h5 class="px-4 ">Testimonials:</h5>
+<div class="text-center">
+       <p> <img src="/images/portfolio_cisco/TESTIMONIALS_001-NR.jpg" class="img-fluid" alt="Responsive image"> </p> 
+       <p> <img src="/images/portfolio_cisco/TESTIMONIALS_003-TK.jpg" class="img-fluid" alt="Responsive image"> </p> 
+</div>
+
+
+
+
+
+
+      
+ <!--Footer-->
+<div id="rwfooter"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+    <script>
+      $(function(){
+        $("#rwnav").load("nav.html");
+        $("#rwfooter").load("footer.html"); 
+      
+        $(document).ready(function(){
+        // Adds minus icon for collapse element which is open by default
+        $(".collapse.show").each(function(){
+        	$(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+        
+        // Toggles plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+    });
+      });
+      </script>
+  </body>
+</html>

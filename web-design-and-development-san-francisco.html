@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>San Francisco, Walnut Creek, Experience Design | User Interface Design</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <link href="css/rwcustom.css"        rel="stylesheet">
+  
+ 
+  </head>
+<body class="body-portfolio-skill">
+<div id="rwnav"></div>
+<!--Content-->
+<h5 class="px-4 ">Portfolio: Client Work &#8212; Schwab</h5>
+<p class="px-4">Multiple projects.  Every project included technical documentation.</p>
+<div id="exTab1" class="container-fluid px-4">	
+    <ul  class="nav nav-pills">
+        <li class="active"><a  href="#1a" data-toggle="tab">2016</a></li>
+        <li><a href="#2a" data-toggle="tab">2015</a></li>
+        <li><a href="#3a" data-toggle="tab">2014</a></li>
+        <li><a href="#4a" data-toggle="tab">2013</a></li>
+        <li><a href="#5a" data-toggle="tab">2012</a></li>
+        <li><a href="#6a" data-toggle="tab">2011</a></li>
+    </ul>
+    
+    <div class="tab-content clearfix">
+        <div class="tab-pane active" id="1a">
+            
+            <p><strong>Project: </strong>Enterprise Finance, BPT, & Schwab’s Marketing portal.</p>
+            <strong>Deliverables:</strong>
+            <ul>
+                <li>Local Marketing Portal – with custom features and reusable components for marketing event driven templates, custom designed mega menu.</li>
+                <li>Visual design mockups, ideation and front-end development including but not limited to sliced and optimized images, page optimization, created highly customized pages with reusable components.</li>
+                <li>Partnered with UX team for wireframes, provided optional ux flows and iterations.</li>
+            </ul>
+        </div>
+        <div class="tab-pane" id="2a">
+            <p><strong>Project: </strong>Advisor Services, ISRM, Analytics and Business Insights ABI.</p>
+            <strong>Deliverables:</strong>
+            <ul> 
+                <li>Photoshop mockups.</li>
+            </ul>
+        </div>
+        <div class="tab-pane" id="3a">
+                <p><strong>Projects: </strong>Powering Appreciation, Leading Appreciation, Real Estate Plans, Investor Services and CS&S, The Schwab Story: Investing Matters micro site.</p>
+                <strong>Deliverables:</strong>
+                <ul> 
+                    <li>Photoshop mockups, user experience flows.</li>
+                    <li>Website production for the above intranet portals.</li>
+                </ul>
+        </div>
+        <div class="tab-pane" id="4a">
+                <p><strong>Projects: </strong>Schwab Story, Schwab History Celebrating 40 years, S&C Portal.</p>
+                <strong>Deliverables:</strong>
+                <ul> 
+                    <li>Created site layouts consistent with Own Your Tomorrow brand.</li>
+                </ul>
+        </div>
+        <div class="tab-pane" id="5a">
+                <p><strong>Projects: </strong>New Health HSA Project.</p>
+                <strong>Deliverables:</strong>
+                <ul> 
+                    <li>Multiple updates, Megamenus - Implemented Optimal Site IA.</li>
+                    <li>Documentation and development process.</li> 
+                </ul>
+        </div>
+        <div class="tab-pane" id="6a">
+                <p><strong>Projects: </strong>Designed Schwab's Independent Branch Services, Branch Leaders Consumer Facing Product.</p>
+                <strong>Deliverables:</strong>
+                <ul> 
+                    <li>Produced a new Charles Schwab website to serve the sales, marketing, servicing and compliance needs of the independent broker franchise network.</li>
+                    <li>Partnered with product team on UX scenarios and photoshop mockups pre-development.</li>
+                    <li>Additional Support for – Options Xpress, Initiative Watch project.</li>
+                </ul>
+        </div>
+    </div>
+    </div>    
+<!--Content-->
+
+<br>
+<h5 class="px-4 ">Testimonials:</h5>
+<div class="text-center">
+<p> <img src="/images/testimonials/TESTIMONIALS_002-KT.jpg" class="img-fluid" alt="Responsive image"> </p>     
+</div>
+
+
+
+
+
+
+
+
+      
+ <!--Footer-->
+<div id="rwfooter"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+    <script>
+      $(function(){
+        $("#rwnav").load("nav.html");
+        $("#rwfooter").load("footer.html"); 
+      
+        $(document).ready(function(){
+        // Adds minus icon for collapse element which is open by default
+        $(".collapse.show").each(function(){
+        	$(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+        
+        // Toggles plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+    });
+      });
+      </script>
+  </body>
+</html>

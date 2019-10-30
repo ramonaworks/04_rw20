@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>San Francisco, Walnut Creek, Virtual Events</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <link href="css/rwcustom.css"        rel="stylesheet">
+  
+ 
+  </head>
+<body class="body-portfolio-skill">
+<div id="rwnav"></div>
+<!--Content-->
+<h5 class="px-4 ">Portfolio: E-Learning & Instructional Design</h5>
+<div class="bs-example">
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i>1. The problem that was solved</button>									
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                        <ul>
+                                <li>Make Drupal easy to understand and use.</li>
+                                <li>Make open source technology accessible for everyone.</li>
+                        </ul>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>2. Production</button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <ul>
+                        <li>Created an e-learning product called "Begin Learning Drupal", to demonstrate an easy way to understand and use the content management system called Drupal.</li>
+                        <li>Product included the following: over 30 instructional videos on Drupal, as well as a bonus product on Search Optimization  </li>
+                        <li>Website Link: <a href="http://beginlearningdrupal.com/" target="_blank">Begin Learning Drupal &#10697; </a></li> 
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--Content-->
+
+<!-- Testimonials -->
+<h5 class="px-4 ">Testimonials:</h5>
+<div class="text-center">
+<p> <img src="/images/testimonials/TESTIMONIALS_007.jpg" class="img-fluid" alt="Responsive image"> </p>     
+</div>
+
+
+
+
+<h5 class="px-4 ">Created the YouTube Ad Promo:</h5>
+
+    <!-- Virtual show video demo -->
+    <div class="embed-responsive embed-responsive-16by9 text-center">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=ysY9vwQQhCU" allowfullscreen></iframe>
+    </div>
+ 
+
+ 
+
+
+
+
+
+
+      
+ <!--Footer-->
+<div id="rwfooter"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+    <script>
+      $(function(){
+        $("#rwnav").load("nav.html");
+        $("#rwfooter").load("footer.html"); 
+      
+        $(document).ready(function(){
+        // Adds minus icon for collapse element which is open by default
+        $(".collapse.show").each(function(){
+        	$(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+        
+        // Toggles plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+    });
+      });
+      </script>
+  </body>
+</html>

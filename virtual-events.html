@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>San Francisco, Walnut Creek, Virtual Events</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <link href="css/rwcustom.css"        rel="stylesheet">
+  
+ 
+  </head>
+<body class="body-portfolio-skill">
+<div id="rwnav"></div>
+<!--Content-->
+<h5 class="px-4 ">Portfolio: Client Work &#8212; ON24</h5>
+<div class="bs-example">
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i>1. The problem that was solved</button>									
+                </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                        <ul>
+                                <li>Internationalization and Search visibility. </li>
+                                <li>Showcase what is possible on the ON24 platform.</li>
+                        </ul>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus"></i>2. The deliverables</button>
+                </h2>
+            </div>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <ul>
+                        <li>Achieved a first page of Google for the term "virtual events" at the time. Provided competitive analysis search data and points of leverage to increase site ranking.</li>
+                        <li>Additionally, a German version of the website was produced as part of the Internationalization project.</li>
+                        <li>Produced a virtual show demo (see below), to demonstrate what is possible on the ON24 platform</li> 
+                    </ul> 
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--Content-->
+<h5 class="px-4 ">Virtual Show Demo:</h5>
+<p class="px-4">
+    Graphics, including text animation and video animation production by me - Ramona<br>
+    Voice by Kevin M.
+</p>
+
+    <!-- Virtual show video demo -->
+    <div class="embed-responsive embed-responsive-16by9 text-center">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=T2gjboFBRgU" allowfullscreen></iframe>
+    </div>
+ 
+
+ 
+
+
+
+
+
+
+      
+ <!--Footer-->
+<div id="rwfooter"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+    <script>
+      $(function(){
+        $("#rwnav").load("nav.html");
+        $("#rwfooter").load("footer.html"); 
+      
+        $(document).ready(function(){
+        // Adds minus icon for collapse element which is open by default
+        $(".collapse.show").each(function(){
+        	$(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+        
+        // Toggles plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+    });
+      });
+      </script>
+  </body>
+</html>
