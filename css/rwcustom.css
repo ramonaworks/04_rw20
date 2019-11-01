@@ -15,11 +15,16 @@ font-family: Poppins, "Poppins Black", "Poppins ExtraBold", "Poppins ExtraLight"
 body {
   background: url(../images/bg_1920x1080.jpg) no-repeat center center fixed;
 }
-/*Experience Design*/
+/*Skill showcase pages*/
 .body-portfolio-skill{
   background:none;
   background-color: #FFFFFF;
 }
+/*Marketing showcase*/
+.body-marketing {
+  background: url(../images/bg-marketing.jpg) no-repeat center center fixed;
+}
+/*S
 
 /*About Me*/
 .body-about-me{
