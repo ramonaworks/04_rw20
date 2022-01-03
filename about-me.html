@@ -1,79 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>San Francisco Web Design | Web Design San Francisco</title>
-
-    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
-    <link href="css/rwcustom.css"        rel="stylesheet">
-     
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RamonaWorks, is a product of Ramona Dsouza, who is a Sr. Ux Designer, with 20 years of experience in Visual Design and Front End Design Engineering.">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Angular, React, Vue">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <link rel="stylesheet" href="css/style.css">
+  <title>Ramonaworks | Experience Designer | Tools: Sketch, Figma, Adobe Xd, Invision | Craft</title>
+  <base href="index.html">
+</head>
+<body> 
+ <div id="rwnav"></div>
  
-  </head>
-  <body class="body-about-me">
+  <!-- Content -->
+  <section class="text-dark p-5 text-center">
+    <div class="container text-start">
+      <div class="d-flex "> 
+          <h1>About me</h1>    
+      </div>
+      <hr>  
+      <!--Content-->
+      <p class="lead">I enjoy the process... <br>
+        & the challenge <br> while  contributing ideas 
+        </p>
 
-<div id="rwnav"></div>
-
-<!--Content-->
-<header>
-      <div class="jumbotron">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12">
-             
-              <div id="home-hero">
-              
-                
-                <div id="home-hero1"> 
-                    <h1 class="home-heromessage-400">I enjoy the process... <br>
-                    & the challenge <br> while <span class="home-heromessage-600">contributing ideas</span>
-                    </h1>
-
-                    <p class="about-me-p">Creating world class digital products using technology is what I love to do.  Coming from a design and finance background, I do believe it is possible to create high quality products that look good and perform extremely well.  Lets create something amazing.</p>
-                  
-                    <p class="about-me-p" > <em>Events I've attended:</em></p>
-                    <ul>
-                      <li>GitHub Universe 2017</li>
-                      <li>9/10/2017 : Top 5 finalist for IBM/MobileMonday’s hackathon cloud app “Connect Bot“.  It was my first time competing in a hackathon and we barely had a day to come up with an idea and execute on it. It was a lot of fun.</li>
-                      <li>Jenkins World 2017:  Why? Because I wanted to have an understanding of the continuous integration principle to automate delivery of front end apps, including automated tests and automating the release process as well.</li>
-                    </ul>
-            </div>
-            <div id="home-hero2"> <img class="img-opacity-6" src="images/hero-about-01.svg"> </div>
- </div></div></div></div>
+        <p >Creating world class digital products using technology is what I love to do.  Coming from a design and finance background, I do believe it is possible to create high quality products that look good and perform extremely well.  Lets create something amazing.</p>
       
-      </div><!--Jumbotron-->
-</header>
-
-      
- <!--Footer-->
-<div id="rwfooter"></div>
-
-
+        <p > <em>Events I've attended:</em></p>
+        <ul>
+          <li>GitHub Universe 2017</li>
+          <li>9/10/2017 : Top 5 finalist for IBM/MobileMonday’s hackathon cloud app “Connect Bot“.  It was my first time competing in a hackathon and we barely had a day to come up with an idea and execute on it. It was a lot of fun.</li>
+          <li>Jenkins World 2017:  Why? Because I wanted to have an understanding of the continuous integration principle to automate delivery of front end apps, including automated tests and automating the release process as well.</li>
+        </ul>
 
 
+    </div>
+  </section>
+  <div id="rwfooter"></div>
+  <!-- Bootstrap Bundled -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.0.0.js"></script>
-    <script>
-      $(function(){
-        $("#rwnav").load("nav.html");
-        $("#rwfooter").load("footer.html");
-      });
-      </script>
-      <!-- GA --> 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151954291-1"></script>
-    <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-151954291-1');
+  <!-- External Files -->
+  <script>
+    $(function(){
+      $("#rwnav").load("nav.html");
+      $("#rwfooter").load("footer.html");
+    });
     </script>
-    
-  </body>
+
+  <!-- Google Analytics--> 
+  <script 
+  async src="https://www.googletagmanager.com/gtag/js?id=UA-151954291-1">
+  </script>
+  <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151954291-1');
+  </script>
+</body>
 </html>

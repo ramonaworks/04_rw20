@@ -1,86 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>San Francisco, Walnut Creek, Experience Design | User Interface Design</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-    <link rel="stylesheet" href="css/rwcustom.css">  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RamonaWorks, is a product of Ramona Dsouza, who is a Sr. Ux Designer, with 20 years of experience in Visual Design and Front End Design Engineering.">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Angular, React, Vue">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <link rel="stylesheet" href="css/style.css">
+  <title>Ramonaworks | Experience Designer | Tools: Sketch, Figma, Adobe Xd, Invision | Craft</title>
+  <base href="index.html">
 </head>
-<body class="body-marketing">
-<div id="rwnav"></div>
-<!--Content-->
-<h5 class="px-4 ">Marketing and Search Optimization</h5>
-    <p class="px-4 ">
-      From digital marketing, outdoor advertising, to books, tshirts, cups, mugs, all kinds of stationery, custom designed brochures that match your brand and style guides, there's every reason your brand will get the attention it deserves!
-    </p> 
-    <p class="px-4 text-center">
-      <img src="images/marketing/animated-outdoor-advertising.gif" class="img-fluid" alt="Make that logo bigger!">
-    </p> 
+<body> 
+ <div id="rwnav"></div>
+ 
+  <!-- Content -->
+  <section class="text-dark p-5 text-center">
+    <div class="container">
+      <div class="d-flex"> 
+          <h1>Marketing and Search Optimization</h1>    
+      </div>
+      <hr>
+      <p class="lead text-start">
+        From digital marketing, outdoor advertising, to books, tshirts, cups, mugs, all kinds of stationery, custom designed brochures that match your brand and style guides, there's every reason your brand will get the attention it deserves! 
+      </p>
+ 
+      <!--Content-->  
+<div class="text-start py-5">
+  <img src="images/marketing/animated-outdoor-advertising.gif" class="img-fluid" alt="Make that logo bigger!">
 
-<h5 class="px-4 "><strong>SEO</strong> means Search Engine Optimization. <br> Tips for 2019:</h5>  
-<div class="px-4">
-      <ul>
-        <li>Understand generic optimization and specific optimization.</li>
-        Generic optimization is the basic minimum like having your keywords, description, meta data, page titles, alt tags and semantic tags all make sense. 
-        However, optimizing for a specific phrase will take more work and involves knowing much more about your site in comparison to your competitors search data.  
-        <li>Create content for humans but optimize words and phrases for search engines.</li>
-        <li>Analyze existing search data, including traffic and best performing pages. Note down your KPIs.</li>
-        <li>The power of UX ensures people want to keep reading your pages.</li> 
-        <li>Leverage social media.</li> 
-        <li>Know and measure the differences between text and voice search.</li> 
-      </ul>
-</div>
+  <h5 class="text-start py-3"><strong>SEO</strong> means Search Engine Optimization.</h5>  
+<p class="lead">Quick tips:</p> 
+  <ul class="text-start">
+    <li>Understand generic optimization and specific optimization.</li>
+    Generic optimization is the basic minimum like having your keywords, description, meta data, page titles, alt tags and semantic tags all make sense. 
+    However, optimizing for a specific phrase will take more work and involves knowing much more about your site in comparison to your competitors search data.  
+    <li>Create content for humans but optimize words and phrases for search engines.</li>
+    <li>Analyze existing search data, including traffic and best performing pages. Note down your KPIs.</li>
+    <li>The power of UX ensures people want to keep reading your pages.</li> 
+    <li>Leverage social media.</li> 
+    <li>Know and measure the differences between text and voice search.</li> 
+  </ul>
+
+</div> 
+
+
+ 
 <div class="text-center"> 
-       <p> <img src="images/marketing/smartphone-design-mockup.png"  class="img-fluid" alt="Phone Demo"> </p> 
+   <p> <img src="images/marketing/smartphone-design-mockup.png"  class="img-fluid" alt="Phone Demo"> </p> 
 </div>
 
-<h5 class="px-4 ">Testimonials:</h5>
+
+<div class="text-start"> 
+  <h5>Testimonials:</h5>
 <div class="text-center"> 
-       <p> <img src="/images/testimonials/TESTIMONIALS_002-KT.jpg" class="img-fluid" alt="Responsive image"> </p> 
+   <p> <img src="/images/testimonials/TESTIMONIALS_002-KT.jpg" class="img-fluid" alt="Responsive image"> </p> 
 </div>
-  
- <!--Footer-->
-<div id="rwfooter"></div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.0.0.js"></script>
-    <script>
-      $(function(){
-        $("#rwnav").load("nav.html");
-        $("#rwfooter").load("footer.html"); 
-      
-        $(document).ready(function(){
-        // Adds minus icon for collapse element which is open by default
-        $(".collapse.show").each(function(){
-        	$(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
-        });
-        
-        // Toggles plus minus icon on show hide of collapse element
-        $(".collapse").on('show.bs.collapse', function(){
-        	$(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
-        }).on('hide.bs.collapse', function(){
-        	$(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
-        });
+</div>
+
+
+    </div>
+  </section>
+  <div id="rwfooter"></div>
+  <!-- Bootstrap Bundled -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- External Files -->
+  <script>
+    $(function(){
+      $("#rwnav").load("nav.html");
+      $("#rwfooter").load("footer.html");
     });
-      });
-      </script>
-
-      <!-- GA --> 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151954291-1"></script>
-    <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-151954291-1');
     </script>
 
-    
-  </body>
+  <!-- Google Analytics--> 
+  <script 
+  async src="https://www.googletagmanager.com/gtag/js?id=UA-151954291-1">
+  </script>
+  <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151954291-1');
+  </script>
+</body>
 </html>

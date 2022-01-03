@@ -1,46 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>San Francisco Web Design | Web Design San Francisco</title>
-    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
-    <link href="css/rwcustom.css"        rel="stylesheet">
-  </head>
-  <body>
-<div id="rwnav"></div>
-<!--Content-->
-<header>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12"> 
-              <div id="home-hero">
-                <div id="home-hero1"> 
-                  <h1 class="home-heromessage-400">Design is learning by making.
-                   <br><span class="home-heromessage-600">Joey Hasty</span>
-                  </h1>
-                </div>
-              <div id="home-hero2"> <img class="img-opacity-8" src="images/hero-image-01.svg"> </div> 
-              </div></div></div></div> 
-      </div><!--Jumbotron--> 
-</header>     
- <!--Footer-->
-<div id="rwfooter"></div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RamonaWorks, is a product of Ramona Dsouza, who is a Sr. Ux Designer, with 20 years of experience in Visual Design and Front End Design Engineering.">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Angular, React, Vue">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Ramonaworks | San Francisco Web Design UX, UI Front End Development</title>
+</head>
+<body>
+  <section class="showcase">
+    <header> 
+      <img class="logo" src="images/logo.svg" alt="">
+      <div class="toggle"></div> 
+    </header>
+  <video src="iexplored.mov" muted autoplay loop></video>
+  <div class="overlay"></div>
+  <div class="text">
+    <h2 class="flow-text">Design is learning by making </h2> 
+    <h3 class="flow-text">&#8212;Joey Hasty</h3>   
+    <a type="button" 
+       class="hero-btn " 
+       href="experience-design.html">EXPLORE SITE
+    </a>  
+  </div>  
+  </section>
+  <div class="menu">
+    <ul>
+        <li>
+          Skills
+          <ul>
+            <li><a href="experience-design.html">Product Design UX | UI</a></li>
+            <li><a href="front-end-engineer.html">Front-end Development</a></li>
+            <li><a href="internet-marketing-service.html">Marketing & SEO</a></li> 
+          </ul>
+        </li> 
+        <li class="mt-3">
+          Portfolio
+          <ul>
+            <li><a href="web-design-and-development-walnut-creek.html">Cisco Systems</a></li>
+            <li><a href="web-design-and-development-san-francisco.html">Charles Schwab</a></li>
+            <li><a href="virtual-events.html">ON24</a></li> 
+            <li><a href="e-learning.html">E-Learning</a></li> 
+          </ul>
+        </li> 
+        <li class="mt-3">
+          About Me
+          <ul>
+            <li><a href="about-me.html">Learn More</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li> 
+          </ul>
+        </li>  
+    </ul>
+</div>
+  <script>
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase'); 
+      menuToggle.addEventListener('click', () => {
+          menuToggle.classList.toggle('active')
+          showcase.classList.toggle('active')
+          
+      }) 
+  </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.0.0.js"></script>
-    <script>
-      $(function(){
-        $("#rwnav").load("nav.html");
-        $("#rwfooter").load("footer.html");
-      });
-      </script>
-    <!-- GA --> 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151954291-1"></script>
+    <script src="js/bootstrap.min.js"></script> 
+
+
+
+    <!-- Google --> 
+    <script 
+    async src="https://www.googletagmanager.com/gtag/js?id=UA-151954291-1">
+    </script>
     <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -48,6 +83,5 @@
 
           gtag('config', 'UA-151954291-1');
     </script>
-
-  </body>
+</body>
 </html>
