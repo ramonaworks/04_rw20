@@ -12,20 +12,31 @@
 </head>
 <body>
   <section class="showcase">
-    <header> 
-      <img class="logo" src="images/logo.svg" alt="">
-      <div class="toggle"></div> 
-    </header>
-  <video src="iexplored.mp4" muted autoplay loop></video>
-  <div class="overlay"></div>
-  <div class="text">
-    <h2 class="flow-text">Design is learning by making </h2> 
-    <h3 class="flow-text">&#8212;Joey Hasty</h3>   
-    <a type="button" 
-       class="hero-btn " 
-       href="experience-design.html">EXPLORE SITE
-    </a>  
-  </div>  
+    <div class="container">
+        <header> 
+          <img class="logo" src="images/logo.svg" alt="">
+          <div class="toggle"></div> 
+        </header>
+        <video src="iexplored.mov" muted autoplay loop></video>
+    <div class="overlay"></div>
+      <div class="text">
+        <h2 class="flow-text">Design is learning by making </h2> 
+        <h3 class="flow-text">&#8212;Joey Hasty</h3> 
+        <!-- CtaLarge -->
+        <div class="d-none d-sm-block"> 
+        <a type="button" 
+          class="hero-btn " 
+          href="experience-design.html">EXPLORE SITE
+        </a>  
+        </div>  
+        <!-- CtaMobile -->
+        <div class="d-block d-sm-none">
+          <a href="experience-design.html">
+            <button type="button" class="btn btn-primary">EXPLORE SITE</button>
+          </a> 
+        </div> 
+      </div>  
+    </div>
   </section>
   <div class="menu">
     <ul>
@@ -55,23 +66,19 @@
         </li>  
     </ul>
 </div>
+  <!-- Custom-Home -->
   <script>
       const menuToggle = document.querySelector('.toggle');
       const showcase = document.querySelector('.showcase'); 
       menuToggle.addEventListener('click', () => {
           menuToggle.classList.toggle('active')
-          showcase.classList.toggle('active')
-          
+          showcase.classList.toggle('active') 
       }) 
   </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script> 
-
-
-
     <!-- Google --> 
     <script 
     async src="https://www.googletagmanager.com/gtag/js?id=UA-151954291-1">
