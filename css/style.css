@@ -12084,6 +12084,8 @@ fieldset:disabled .btn {
   border-radius: .8rem;
   font-weight: 600;
   text-decoration: none;
+  height: 100%;
+  color: #336699;
 }
 
 .text a.hero-btn:hover {
@@ -12163,9 +12165,5 @@ hr {
   }
   .text p {
     font-size: 2.1rem;
-  }
-  .text a {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
   }
 }
