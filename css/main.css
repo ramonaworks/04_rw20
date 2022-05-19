@@ -1,0 +1,104 @@
+/* 
+Nav:             Roboto
+Content:         Poppins
+Content Buttons: Nunito
+Quotes:          Courgette
+*/
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+
+
+/* Reset */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  font-size: 100%;
+}
+
+/* Site Main Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F3F4F6;
+}
+
+ul {
+  line-height: 1.85rem;
+}
+
+.nav-item {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase; 
+}
+
+.btn {
+  font-family: 'Nunito Sans', sans-serif; 
+}
+
+/* Material Icons */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.pre {white-space: pre;}
+
+
+hr {width: 100%;}
+
+.logo {
+  cursor: pointer; 
+}
+
+
+.nav-link {
+  color: #171618 !important;
+  margin: 0 .325rem; 
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: .9rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-bottom: 2px #ECECEC solid;
+  font-size: 1.4rem;
+}
+
+/* Gradient and Reverse */
+.gradience-1 {
+  height: 100%;
+  background-color: #ECECEC; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#F3F4F6, #E7E9EC, #DDE0E4, #D6D9DE, #CCD0D7, #C1C6CE, #ACB3BE);
+}
+.gradience-2 {
+  height: 100%;
+  background-color: #ECECEC; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#ACB3BE, #C1C6CE, #CCD0D7, #D6D9DE, #DDE0E4, #E7E9EC, #F3F4F6);
+}
+
+/*Page Level Styles*/
+/* Home Hero Start */
+.mover-img {
+  animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-12px);
+  }
+}
+/* Home Hero End */

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Icon Library | font-->
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- Import Materialize.css-->
+<link rel="stylesheet" type="text/css"
+href="css/materialize.min.css"
+media="screen,projection" />
+<link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WeatherMaterialized | Pure JavaScript (no Js Framework) and Materialize (based on MD) </title>
+</head>
+<body>
+<div class="row center-align text-flow">
+<div class="col s12 brown lighten-5">
+<a class="btn waves-effect waves-light modal-trigger pink" href="#modal1">Change Location</a>
+<div id="modal1" class="modal">
+<div id="locModal" class="modal-content">
+  <h4>Modal Header</h4>
+  <form id="w-form">
+    <div class="form-group">
+      <label for="city">City</label>
+      <input type="text" id="city" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="zipcode">Zipcode</label>
+        <input type="text" id="zipcode" class="form-control">
+      </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <a class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+  <button id="rw-change-btn" type="button" class="btn btn-primary blue-grey modal-close">Save changes</button>
+</div>
+</div>
+<h1 id="rw-location"></h1>
+  <h4 class="grey-text" id="rw-desc"></h4>
+  <img class="light-blue" id="rw-icon">
+  <h4 id="rw-string" class="grey-text"></h4>
+  <ul id="w-details" class="list-group mt-3">
+    <li class="list-group-item" id="rw-humidity"></li>
+    <li class="list-group-item" id="rw-feels-like"></li>
+    <li class="list-group-item" id="rw-wind"></li>
+  </ul>
+</div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+$(document).ready(function () {
+$('.dropdown-button').dropdown({
+  constrainWidth: false,
+  hover: true,
+  belowOrigin: true,
+  alignment: 'left'
+});
+$('.modal').modal({
+  dismissible: true,
+  inDuration: 300,
+  outDuration: 200,
+  ready: function (modal, trigger) {
+    console.log('The Modal is', modal, trigger);
+  }
+});
+});
+</script>
+<script src="storage.js"></script>
+<script src="weather.js"></script>
+<script src="ui.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
