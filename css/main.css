@@ -42,24 +42,18 @@ ul {
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 .pre {white-space: pre;}
-
-
 hr {width: 100%;}
-
 .logo {
   cursor: pointer; 
 }
-
 
 .nav-link {
   color: #171618 !important;
   margin: 0 .325rem; 
 }
-
 .dropdown-toggle::after {
   display: none !important;
 }
-
 .dropdown-item {
   display: block;
   width: 100%;
@@ -106,6 +100,9 @@ hr {width: 100%;}
   mix-blend-mode: overlay;  /* without mix-blend-mode: only shows bg */
 z-index: 20;
 }
+.pr-100 {
+  padding-right: 100px; // Centers the Explore Button s
+}
 .herobtn {
   position:absolute;
   z-index: 30; 
@@ -124,7 +121,6 @@ z-index: 20;
 .jumpy-updown {
   animation: mover 1s infinite alternate;
 }
-
 @keyframes mover {
   0% {
     transform: translateY(0);
@@ -133,4 +129,3 @@ z-index: 20;
     transform: translateY(-12px);
   }
 }
-/* Jumpy Ux Designer*/
