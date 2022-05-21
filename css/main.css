@@ -120,10 +120,8 @@ z-index: 20;
 }
 
 
-
-
-/* Jumpy Ux Designer */
-.mover-img {
+/* Jumpy Designer */
+.jumpy-updown {
   animation: mover 1s infinite alternate;
 }
 
