@@ -101,7 +101,7 @@ hr {width: 100%;}
 z-index: 20;
 }
 .pr-100 {
-  padding-right: 100px; // Centers the Explore Button s
+  padding-right: 180px; 
 }
 .herobtn {
   position:absolute;
