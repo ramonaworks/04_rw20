@@ -42,6 +42,7 @@ ul {
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 .pre {white-space: pre;}
+
 hr {width: 100%;}
 .logo {
   cursor: pointer; 
@@ -79,6 +80,26 @@ hr {width: 100%;}
   height: 100%;
   background-color: #ECECEC; /* For browsers that do not support gradients */
   background-image: linear-gradient(#ACB3BE, #C1C6CE, #CCD0D7, #D6D9DE, #DDE0E4, #E7E9EC, #F3F4F6);
+}
+
+/* Legendary Quotes */
+blockquote {
+	background-image: linear-gradient(270deg, rgb(249,249,250), rgb(232,232,232), rgb(219,219,219));
+	border: 2px solid #ececec;
+	border-radius: 10px; 
+	padding-top: 3rem; 
+}
+blockquote:before {
+	color: #336699;
+	content: '“'; 
+	font-family: 'Courgette', serif;
+	font-size: 7rem;
+	line-height: 2.5rem;
+	margin-right: 0.25rem;
+	vertical-align: -0.4rem;
+}
+blockquote p {
+	display: inline;
 }
 
 /*Page Level Styles*/
