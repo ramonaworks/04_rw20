@@ -150,3 +150,25 @@ z-index: 20;
     transform: translateY(-12px);
   }
 }
+
+/* Wonderful Devices */
+@media (max-width: 575px) {
+  .rw-nav-on-small {
+    width: -webkit-fill-available;
+  }
+}
+@media (min-width:576px) and (max-width:768px){ }
+.rw-logo {
+  width: 50%;
+}
+@media (max-width: 575px) {
+  .rw-logo {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .rw-logo {
+    width: 35%;
+    min-width: 350px;
+  }
+}
