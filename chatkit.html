@@ -1,25 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Experimental Demo for Interviews</title>
+  <title>Dsouza Demo Agent</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-dark text-light">
+
+<div class="container py-5">
+  <div class="card shadow-lg">
+    <div class="card-header bg-primary text-white">
+      Dsouza Demo Agent
+    </div>
+    <div class="card-body" style="height:400px; overflow-y:auto" id="chat"></div>
+    <div class="card-footer d-flex gap-2">
+      <input id="msg" class="form-control" placeholder="Ask something..." />
+      <button class="btn btn-primary" onclick="send()">Send</button>
+    </div>
+  </div>
+</div>
 
 <script>
-  window.openai = window.openai || {};
-  openai.apiKey = "domain_pk_69738fb156dc8196aa370fbe5c11f61605835179e24f07aa";  // from your org (if required)
-</script>
-<script src="https://cdn.openai.com/client/chat.js"></script>
-<script>
-  OpenAIChat.render({
-    workflow: "wf_69738c2a73c48190a5cc677dbb74a81f04082a7df848d627",
-    container: document.body
-  });
+async function send() {
+  const input = document.getElementById("msg");
+  const chat = document.getElementById("chat");
+  const text = input.value.trim();
+  if(!text) return;
+
+  chat.innerHTML += `<div class="text-end mb-2"><span class="badge bg-secondary">${text}</span></div>`;
+  input.value = "";
+
+  const res = await fetch("http://localhost:3000/chat?q=" + encodeURIComponent(text));
+  const data = await res.json();
+
+  chat.innerHTML += `<div class="text-start mb-2"><span class="badge bg-success">${data.reply}</span></div>`;
+  chat.scrollTop = chat.scrollHeight;
+}
 </script>
 
-
-  
 </body>
 </html>
