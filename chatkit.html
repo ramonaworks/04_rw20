@@ -29,7 +29,7 @@ async function send() {
   chat.innerHTML += `<div class="text-end mb-2"><span class="badge bg-secondary">${text}</span></div>`;
   input.value = "";
 
-  const res = await fetch("http://localhost:3000/chat?q=" + encodeURIComponent(text));
+  const res = await fetch("https://zero4-rw20.onrender.com/chat?q=" + encodeURIComponent(text));
   const data = await res.json();
 
   chat.innerHTML += `<div class="text-start mb-2"><span class="badge bg-success">${data.reply}</span></div>`;
