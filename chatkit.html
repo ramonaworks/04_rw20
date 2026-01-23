@@ -7,12 +7,18 @@
 </head>
 <body>
 
-  <script src="https://cdn.openai.com/chatkit.js"></script>
 <script>
-  OpenAIChatKit.init({
-    workflowId: "wf_69738c2a73c48190a5cc677dbb74a81f04082a7df848d627",
+  window.openai = window.openai || {};
+  openai.apiKey = "domain_pk_69738fb156dc8196aa370fbe5c11f61605835179e24f07aa";  // from your org (if required)
+</script>
+<script src="https://cdn.openai.com/client/chat.js"></script>
+<script>
+  OpenAIChat.render({
+    workflow: "wf_69738c2a73c48190a5cc677dbb74a81f04082a7df848d627",
+    container: document.body
   });
 </script>
+
 
   
 </body>
