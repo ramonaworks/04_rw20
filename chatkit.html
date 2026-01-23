@@ -3,12 +3,113 @@
 <head>
   <title>Dsouza Demo Agent</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: #faf9f7;
+  color: #1c1c1c;
+}
+
+.card {
+  border: 1px solid #e6e4e1;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.card-header {
+  background: #ffffff;
+  color: #1c1c1c;
+  font-weight: 500;
+  border-bottom: 1px solid #eee;
+}
+
+#chat {
+  background: #fcfbfa;
+}
+
+.badge {
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+.bg-secondary {
+  background: #ecebea !important;
+  color: #1c1c1c;
+}
+
+.bg-success {
+  background: #f1f0ee !important;
+  color: #1c1c1c;
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+button {
+  border-radius: 8px;
+  background: #1c1c1c;
+  border: none;
+}
+
+button:hover {
+  background: #000;
+}
+
+.user-msg {
+  display: inline-block;
+  background: #ecebea;
+  padding: 10px 14px;
+  border-radius: 10px;
+  max-width: 70%;
+  text-align: left;
+}
+
+.ai-msg {
+  background: #f1f0ee;
+  padding: 14px 16px;
+  border-radius: 10px;
+  max-width: 85%;
+  line-height: 1.55; /* ~10% more */
+  text-align: left;
+}
+
+button.btn-primary {
+  background: #1c1c1c;
+  border: none;
+  padding: 10px 18px;
+  font-weight: 500;
+}
+
+button.btn-primary:hover {
+  background: #000;
+}
+.clean-header {
+  background: transparent;
+  color: #1c1c1c;
+  font-weight: 500;
+  border-bottom: 1px solid #e6e4e1;
+  padding: 16px 20px;
+}
+
+</style>
+
+
 </head>
 <body class="bg-dark text-light">
 
 <div class="container py-5">
   <div class="card shadow-lg">
-    <div class="card-header bg-primary text-white">
+    <div class="card-header clean-header">
       Dsouza Demo Agent
     </div>
     <div class="card-body" style="height:400px; overflow-y:auto" id="chat"></div>
@@ -26,15 +127,17 @@ async function send() {
   const text = input.value.trim();
   if(!text) return;
 
-  chat.innerHTML += `<div class="text-end mb-2"><span class="badge bg-secondary">${text}</span></div>`;
+  chat.innerHTML += `<div class="text-end mb-3"><div class="user-msg">${text}</div></div>`;
   input.value = "";
 
   const res = await fetch("https://zero4-rw20.onrender.com/chat?q=" + encodeURIComponent(text));
   const data = await res.json();
 
-  chat.innerHTML += `<div class="text-start mb-2"><span class="badge bg-success">${data.reply}</span></div>`;
+  chat.innerHTML += `<div class="mb-3"><div class="ai-msg">${data.reply}</div></div>`;
+
   chat.scrollTop = chat.scrollHeight;
 }
+
 </script>
 
 </body>
